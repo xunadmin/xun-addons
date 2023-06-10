@@ -1,0 +1,32 @@
+{
+    "name": "xunadmin/xun-addons",
+    "description": "xunadmin addons",
+    "homepage": "https://github.com/xunadmin/xun-addons",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+        "name": "fatal",
+        "email": "admin@xunadmin.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "xun\\": "src/"
+        },
+        "files": [
+            "src/common.php"
+        ]
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "xun\\addons\\Service"
+            ]
+        }
+    }
+}
